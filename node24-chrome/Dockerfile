@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.title="toastcode-node-chrome"
 LABEL org.opencontainers.image.description="Node 24.22.1 with pinned Debian Chromium for Puppeteer"
 
 ARG REFRESHED_AT
-ARG CHROMIUM_VERSION=150.0.7871.100-1~deb12u1
+ARG CHROMIUM_VERSION=155.0.8059.79-1~deb12u1
 
 ENV REFRESHED_AT=$REFRESHED_AT
 ENV PUPPETEER_SKIP_DOWNLOAD=true
@@ -19,6 +19,7 @@ RUN apt-get update -qq \
     ca-certificates \
     curl \
     chromium=${CHROMIUM_VERSION} \
+    chromium-common=${CHROMIUM_VERSION} \
   && apt-mark hold chromium chromium-common \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
