@@ -1,8 +1,8 @@
-FROM node:24.16.0-bookworm-slim
+FROM node:24.22.1-bookworm-slim
 
 LABEL maintainer="ToastCode"
 LABEL org.opencontainers.image.title="toastcode-node-chrome"
-LABEL org.opencontainers.image.description="Node 24.16.0 with pinned Debian Chromium for Puppeteer"
+LABEL org.opencontainers.image.description="Node 24.22.1 with pinned Debian Chromium for Puppeteer"
 
 ARG REFRESHED_AT
 ARG CHROMIUM_VERSION=150.0.7871.100-1~deb12u1

@@ -4,7 +4,7 @@ Dockerfiles for reusable ToastCode base images.
 
 ## Images
 
-- `node24-chrome`: Node.js 24.16.0 on Debian Bookworm Slim with pinned Chromium for Puppeteer.
+- `node24-chrome`: Node.js 24.22.1 on Debian Bookworm Slim with pinned Chromium for Puppeteer.
 - `node14-npm7-chrome`: legacy Node/npm/Chrome image.
 
 ## Publishing
